@@ -1,4 +1,4 @@
-package com.orangeandbronze.adapter2.theirs;
+package com.orangeandbronze.adapter.theirs;
 
 import java.util.*;
 

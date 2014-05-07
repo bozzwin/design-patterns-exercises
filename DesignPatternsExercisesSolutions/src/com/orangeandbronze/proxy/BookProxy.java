@@ -25,4 +25,6 @@ public class BookProxy extends Book {
 		book.setPublisher(publisher);  
 	}
 	
+	//TODO: Add getters that delegate to book field
+	
 }

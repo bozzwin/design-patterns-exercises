@@ -3,6 +3,7 @@ package com.orangeandbronze.proxy;
 import java.util.Date;
 
 /**
+ * We want to restrict access to the Book in order to log changes to its fields. 
  * Create a proxy to Book so that ever time a field is set, the field name and
  * the new value will be written to console.
  */

@@ -1,4 +1,4 @@
-package com.orangeandbronze.strategy;
+package com.orangeandbronze.strategy.alt;
 
 import static org.junit.Assert.*;
 
@@ -17,9 +17,10 @@ public class StudentServiceTest {
 		expected.add(new Student(1010, "Arroyo", "Gloria"));
 		expected.add(new Student(2013, "Ramos", "Fidel"));
 		expected.add(new Student(3514, "Aquino", "Cory"));
-		assertEquals(expected, service.getStudents(file, new FileFormatXml()));
+		assertEquals(expected,
+				service.getStudents(file, FileFormat.XML));
 	}
-
+	
 	@Test
 	public void csv() throws Exception {
 		File file = new File("resources/students.csv");
@@ -28,7 +29,8 @@ public class StudentServiceTest {
 		expected.add(new Student(1010, "Arroyo", "Gloria"));
 		expected.add(new Student(2013, "Ramos", "Fidel"));
 		expected.add(new Student(3514, "Aquino", "Cory"));
-		assertEquals(expected, service.getStudents(file, new FileFormatCsv()));
+		assertEquals(expected,
+				service.getStudents(file, FileFormat.CSV));
 	}
 
 }

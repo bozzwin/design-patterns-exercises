@@ -1,11 +1,11 @@
-package com.orangeandbronze.adapter2;
+package com.orangeandbronze.adapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.orangeandbronze.adapter2.theirs.Outputter;
-import com.orangeandbronze.adapter2.theirs.Student;
-import com.orangeandbronze.adapter2.theirs.StudentService;
+import com.orangeandbronze.adapter.theirs.Outputter;
+import com.orangeandbronze.adapter.theirs.Student;
+import com.orangeandbronze.adapter.theirs.StudentService;
 
 public class Runner {
 

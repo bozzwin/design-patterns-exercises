@@ -1,4 +1,4 @@
-package com.orangeandbronze.adapter.theirs;
+package com.orangeandbronze.strategy.alt;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;

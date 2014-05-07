@@ -1,4 +1,4 @@
-package com.orangeandbronze.strategy;
+package com.orangeandbronze.strategy.alt;
 
 import java.io.File;
 import java.util.List;

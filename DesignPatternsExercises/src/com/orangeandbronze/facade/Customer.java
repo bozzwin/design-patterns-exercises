@@ -2,19 +2,19 @@ package com.orangeandbronze.facade;
 
 public class Customer {
 	private int age;
-	private boolean isForeigner;
+	private String citizenship;
 	
-	public Customer(int age, boolean isForeigner) {
+	public Customer(int age, String citizenship) {
 		this.age = age;
-		this.isForeigner = isForeigner;
+		this.citizenship = citizenship;
 	}
 	
 	int getAge() {
 		return age;
 	}
 	
-	boolean isForeigner() {
-		return isForeigner;
+	String getCitizenship() {
+		return citizenship;
 	}
 	
 	
