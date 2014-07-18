@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-public abstract class AbstractCsvReader<T> {
+abstract class AbstractCsvReader<T> {
 	
 	public Set<T> getAll(File file) throws IOException {
 		Set<T> returnSet = new HashSet<>();
