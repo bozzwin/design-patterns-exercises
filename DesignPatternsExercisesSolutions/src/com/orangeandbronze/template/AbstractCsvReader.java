@@ -7,19 +7,24 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-public class CustomerCsvReader {
+public abstract class AbstractCsvReader<T> {
 	
-	Set<Customer> getAll(File file) throws IOException {
-		Set<Customer> returnSet = new HashSet<>();
+	public Set<T> getAll(File file) throws IOException {
+		Set<T> returnSet = new HashSet<>();
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))){			
 			String line = reader.readLine();
 			while (line != null && !line.trim().equals("")) {
 				String[] tokens = line.split("\\s*,\\s*");
-				Customer customer = new Customer(Integer.parseInt(tokens[0]), tokens[1], tokens[2], tokens[3]);
-				returnSet.add(customer);
+				T element = unmarshall(tokens);
+				returnSet.add(element);
 				line = reader.readLine();
 			}
 		}
 		return returnSet;
 	}
+
+	abstract T unmarshall(String[] tokens);
+	
+
+
 }

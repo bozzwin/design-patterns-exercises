@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class ProductCsvReader {
 	
-	Set<Product> getProducts(File file) throws IOException {
+	Set<Product> getAll(File file) throws IOException {
 		Set<Product> returnSet = new HashSet<>();
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))){			
 			String line = reader.readLine();
